@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Taste - Vietnamese Fast Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-red-600 text-white text-center p-6 shadow-lg">
+        <h1 class="text-4xl font-bold">Home Taste</h1>
+        <p class="text-lg">Authentic Vietnamese Fast Food</p>
+    </header>
+
+    <!-- Hero Section with Local Image -->
+    <section class="bg-cover bg-center h-64 flex items-center justify-center text-white text-3xl font-bold"
+        style="background-image: url('Vietnam.jpg');">
+        Taste the Best of Vietnam!
+    </section>
+
+
+    <!-- Menu Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-white mt-6 shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold text-center text-red-600">Our Menu</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-4">
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Pho</div>
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Banh Mi</div>
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Com Tam</div>
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Bun Bo Hue</div>
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Bun Oc Chuoi Dau</div>
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Pizza</div>
+            <div class="bg-gray-200 p-4 text-center rounded-lg">Bun Dau Mam Tom</div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-white mt-6 shadow-lg rounded-lg text-center">
+        <h2 class="text-3xl font-bold text-red-600">Visit Us</h2>
+        <p class="text-lg mt-2">Find us at: <strong>Ho Chi Minh, Vietnam</strong></p>
+    </section>
+
+    <!-- Floating Chatbot Button -->
+    <div id="chatbot-container" class="fixed bottom-5 right-5">
+        <!-- Chatbot Iframe (Initially Hidden) -->
+        <div id="chatbot-frame" class="hidden fixed bottom-20 right-5 w-80 h-[430px] bg-white shadow-lg rounded-lg border">
+            <iframe width="100%" height="100%" allow="microphone;"
+                src="https://console.dialogflow.com/api-client/demo/embedded/35d7754b-cced-44b9-ac7a-19aa15451a38">
+            </iframe>
+        </div>
+
+        <!-- Chat Button -->
+        <button id="chatbot-btn" class="bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-500">
+            💬 Chat with us
+        </button>
+    </div>
+
+    <!-- JavaScript to Toggle Chatbot -->
+    <script>
+        document.getElementById("chatbot-btn").addEventListener("click", function () {
+            let chatbotFrame = document.getElementById("chatbot-frame");
+            chatbotFrame.classList.toggle("hidden");
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-6">
+        &copy; 2025 Home Taste - Vietnamese Fast Food - By Anh
+    </footer>
+
+</body>
+</html>
