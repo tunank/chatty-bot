@@ -61,10 +61,6 @@ Add the following **iframe** inside your website’s HTML:
 - 🔄 **Webhook Error?** Ensure your FastAPI server is running and accessible.
 - 🖼️ **Image Not Loading?** Serve static assets properly with a local HTTP server.
 
-## 📌 Screenshots
-### 🖥️ Website with Chatbot
-![Chatbot Screenshot](images/chatbot-screenshot.png)
-
 ## 🎉 Contributing
 Feel free to submit PRs to improve this chatbot!
 
